@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#203653">
+<title>Teachers' Day 2026-2027 | Ikaw Naman</title>
+
+<style>
+:root {
+  --navy: #203653;
+  --blue: #dfeaf7;
+  --cream: #fffaf2;
+  --gold: #e7b76c;
+  --peach: #f8e5d8;
+  --ink: #203653;
+  --muted: #62738a;
+  --shadow: 0 12px 32px rgba(32,54,83,.10);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #f5f7fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+.site {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: var(--cream);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.topbar {
+  padding: 14px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid #e5eaf0;
+}
+.brand {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.brand small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: bold;
+}
+nav a:hover { color: #bd853b; }
+.hero {
+  min-height: 540px;
+  padding: 85px 20px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 10%, #fffaf0, transparent 45%),
+    radial-gradient(ellipse at 10% 90%, #c2d9f0, transparent 50%),
+    radial-gradient(ellipse at 90% 80%, #b4cde6, transparent 50%),
+    linear-gradient(135deg, #91aecb, #fff0dc, #8da9c7);
+}
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.3);
+  filter: blur(5px);
+  animation: drift 12s ease-in-out infinite alternate;
+}
+.hero::before { top: -200px; left: -80px; }
+.hero::after { bottom: -230px; right: -50px; }
+.sunbeam {
+  position: absolute;
+  inset: -30%;
+  z-index: -1;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 45%,
+    transparent 0deg 10deg,
+    rgba(255,255,255,.18) 11deg 14deg,
+    transparent 15deg 25deg
+  );
+  animation: rotate 80s linear infinite;
+}
+.hero-content {
+  max-width: 760px;
+}
+.eyebrow {
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.year {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+h1 {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-style: italic;
+  font-size: clamp(52px, 10vw, 110px);
+  line-height: 1;
+  margin: 22px 0;
+  color: var(--navy);
+}
+.lead {
+  font-size: clamp(17px, 2.5vw, 23px);
+  font-weight: bold;
+}
+.sublead {
+  max-width: 550px;
+  margin: 15px auto;
+}
+.floaty {
+  position: absolute;
+  font-size: 35px;
+  opacity: .8;
+  animation: bob 5s ease-in-out infinite;
+}
+.f1 { top: 16%; left: 9%; }
+.f2 { top: 20%; right: 10%; animation-delay: -2s; }
+.f3 { bottom: 15%; left: 15%; animation-delay: -3s; }
+.f4 { bottom: 20%; right: 12%; animation-delay: -1s; }
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: 1px solid var(--navy);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  transition: .25s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px #20365330;
+}
+.btn-primary {
+  background: var(--navy);
+  color: white;
+}
+.btn-outline {
+  background: rgba(255,255,255,.6);
+  color: var(--navy);
+}
+.section {
+  padding: 60px 4%;
+}
+.section-title {
+  font-size: clamp(30px, 4vw, 45px);
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.script {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-style: italic;
+}
+.section-intro { color: var(--muted); }
+.appreciation {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  align-items: center;
+  gap: 25px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.app-card {
+  text-align: center;
+  padding: 22px 12px;
+  min-height: 190px;
+  border-radius: 13px;
+  border: 1px solid #dce4ed;
+  box-shadow: 0 5px 14px #20365310;
+  transition: transform .25s;
+}
+.app-card:nth-child(odd) {
+  background: linear-gradient(145deg, #edf4fc, #dce8f5);
+}
+.app-card:nth-child(even) {
+  background: linear-gradient(145deg, #fff6ec, #f8e4d7);
+}
+.app-card:hover { transform: translateY(-6px); }
+.card-icon {
+  font-size: 32px;
+  display: block;
+}
+.reveal {
+  background: transparent;
+  border: 0;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: bold;
+}
+.gallery-section { background: #fffdf8; }
+.center { text-align: center; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.gallery-card { margin: 0; }
+.photo-placeholder {
+  min-height: 145px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 12px;
+  background: linear-gradient(145deg, #cbd8e7, #eef0f1);
+  color: #516781;
+  transition: .25s;
+  overflow: hidden;
+}
+.photo-placeholder:hover { transform: scale(1.03); }
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.photo-placeholder span {
+  display: block;
+  font-size: 35px;
+}
+figcaption {
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.message-section {
+  background: linear-gradient(120deg, #e6effa, #f4f7fc);
+}
+.message-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 35px;
+  align-items: center;
+}
+.message-form {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #c9d5e3;
+  border-radius: 8px;
+}
+textarea.field {
+  min-height: 110px;
+  resize: vertical;
+}
+.message-form .btn {
+  width: 100%;
+  cursor: pointer;
+}
+.note-wall {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.sticky-note {
+  background: #fffaf1;
+  padding: 22px 15px;
+  min-height: 120px;
+  text-align: center;
+  box-shadow: 0 8px 20px #20365315;
+  transform: rotate(-2deg);
+  overflow-wrap: anywhere;
+}
+.sticky-note:nth-child(even) {
+  transform: rotate(2deg);
+  background: white;
+}
+.sticky-note p {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+}
+.sticky-note small { color: var(--muted); }
+.surprise {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 30px;
+  align-items: center;
+  background: linear-gradient(110deg, #fff9ef, #fffdf8);
+}
+.gift {
+  text-align: center;
+  font-size: clamp(90px, 14vw, 160px);
+  animation: bob 4s ease-in-out infinite;
+}
+.gift button {
+  font-size: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.letter {
+  border: 1px solid #ead6b8;
+  background: #fffaf1;
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.event-section { background: #edf3fa; }
+.event-layout {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 18px;
+}
+.panel {
+  background: rgba(255,255,255,.85);
+  border: 1px solid white;
+  border-radius: 14px;
+  padding: 22px;
+}
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.event-item { margin: 15px 0; }
+.event-item strong { display: block; }
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 18px 0;
+}
+.count-box {
+  background: #e7eef7;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px 4px;
+}
+.count-box strong {
+  display: block;
+  font-size: 24px;
+}
+.music-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+.footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 38px 20px;
+}
+.footer .spark { color: var(--gold); }
+.footer small {
+  color: #d9e3ef;
+  letter-spacing: 2px;
+}
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  background: var(--navy);
+  color: white;
+  border-radius: 12px;
+  padding: 12px 18px;
+  box-shadow: var(--shadow);
+  display: none;
+  width: max-content;
+  max-width: 90%;
+}
+.toast.show { display: block; }
+@keyframes bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -12px; }
+}
+@keyframes drift {
+  to { transform: translate(70px, 35px) scale(1.15); }
+}
+@keyframes rotate {
+  to { transform: rotate(360deg); }
+}
+@media (max-width: 850px) {
+  .appreciation,
+  .message-layout,
+  .surprise,
+  .event-layout {
+    grid-template-columns: 1fr;
+  }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 520px) {
+  .topbar { justify-content: center; }
+  nav { justify-content: center; gap: 12px; }
+  .hero { min-height: 580px; padding: 65px 16px; }
+  .cards { gap: 9px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .event-grid { grid-template-columns: 1fr; }
+  .panel { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+<div class="site">
+<header class="topbar">
+  <a class="brand" href="#home">
+    📖 SCHOOL NAME
+    <small>LEARN · GROW · TOGETHER</small>
+  </a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#messages">Message Wall</a>
+    <a href="#event">Event Info</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="sunbeam"></div>
+  <span class="floaty f1">✉️</span>
+  <span class="floaty f2">♡ ✨</span>
+  <span class="floaty f3">📚</span>
+  <span class="floaty f4">✎</span>
+
+  <div class="hero-content">
+    <div class="eyebrow">Teachers' Day</div>
+    <div class="year">— 2026 – 2027 —</div>
+    <h1>IKAW NAMAN</h1>
+    <p class="lead">“Panahon mo naman para pahalagahan, pasalamatan, at ipagdiwang.”</p>
+    <p class="sublead">To the hearts that teach, inspire, and shape our future — this time, the spotlight is yours.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#about">CELEBRATE OUR TEACHERS →</a>
+      <button class="btn btn-outline" id="surpriseJump">DISCOVER THE SURPRISE ★</button>
+    </div>
+  </div>
+</section>
+
+<section class="section appreciation" id="about">
+  <div>
+    <h2 class="section-title script">This Time,<br>Ikaw Naman.</h2>
+    <p class="section-intro">For every lesson you taught, every dream you inspired, and every life you changed.</p>
+  </div>
+
+  <div class="cards">
+    <article class="app-card">
+      <span class="card-icon">📖</span>
+      <p>Salamat sa walang sawang pagtuturo.</p>
+      <button class="reveal" data-message="Thank you for sharing your knowledge and patience with us.">Tap to see more →</button>
+    </article>
+
+    <article class="app-card">
+      <span class="card-icon">♡</span>
+      <p>Salamat sa paniniwala sa aming kakayahan.</p>
+      <button class="reveal" data-message="Your belief in us helps us believe in ourselves.">Tap to see more →</button>
+    </article>
+
+    <article class="app-card">
+      <span class="card-icon">☼</span>
+      <p>Salamat sa pagiging ilaw sa aming kinabukasan.</p>
+      <button class="reveal" data-message="You guide us toward a brighter future, one lesson at a time.">Tap to see more →</button>
+    </article>
+
+    <article class="app-card">
+      <span class="card-icon">☆</span>
+      <p>You deserve to be celebrated, too.</p>
+      <button class="reveal" data-message="Today, we celebrate you and the difference you make every day.">Tap to see more →</button>
+    </article>
+  </div>
+</section>
+
+<section class="section gallery-section" id="gallery">
+  <div class="center">
+    <h2 class="section-title script">Our Teacher Appreciation Gallery</h2>
+    <p class="section-intro">Moments of gratitude, memories that last.</p>
+  </div>
+
+  <div class="gallery">
+    <figure class="gallery-card">
+      <div class="photo-placeholder">
+        <img src="classroomphoto.html" alt="Classroom photo" />
+      </div>
+      <figcaption>In the Classroom</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <div class="photo-placeholder">
+        <div><span>📷</span>Add school activity photo</div>
+      </div>
+      <figcaption>School Activities</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <div class="photo-placeholder">
+        <div><span>📷</span>Add celebration photo</div>
+      </div>
+      <figcaption>Celebration Highlights</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <div class="photo-placeholder">
+        <div><span>📷</span>Add student photo</div>
+      </div>
+      <figcaption>With Our Students</figcaption>
+    </figure>
+
+    <figure class="gallery-card">
+      <div class="photo-placeholder">
+        <div><span>📷</span>Add candid photo</div>
+      </div>
+      <figcaption>Making a Difference</figcaption>
+    </figure>
+  </div>
+
+  <p class="center">Replace the other photo placeholders with your school's pictures.</p>
+</section>
+
+<section class="section message-section" id="messages">
+  <div class="message-layout">
+    <div>
+      <h2 class="section-title">Message for<br>Ma'am and Sir</h2>
+      <p class="section-intro">Leave a note of gratitude. Your words mean the world.</p>
+
+      <form class="message-form" id="messageForm">
+        <input class="field" id="sender" maxlength="50" placeholder="Your Name / Nickname" required>
+        <textarea class="field" id="message" maxlength="280" placeholder="Your Message to a teacher..." required></textarea>
+        <button class="btn btn-primary" type="submit">➤ SEND WITH GRATITUDE</button>
+        <p style="font-size:12px;color:#62738a">Demo only: messages appear on this page and are not saved online.</p>
+      </form>
+    </div>
+
+    <div class="note-wall" id="noteWall">
+      <article class="sticky-note">
+        <p>Thank you for always believing in us!</p>
+        <small>— A grateful student</small>
+      </article>
+      <article class="sticky-note">
+        <p>You are an inspiration to us all!</p>
+        <small>— Grateful Student</small>
+      </article>
+      <article class="sticky-note">
+        <p>Salamat po sa lahat, Ma'am/Sir!</p>
+        <small>— Your Student</small>
+      </article>
+      <article class="sticky-note">
+        <p>You make a difference every day!</p>
+        <small>— Proud Student</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section surprise" id="surprise">
+  <div class="gift">
+    <button id="giftButton" aria-label="Open appreciation gift">🎁</button>
+  </div>
+
+  <div class="letter">
+    <h2 class="section-title script">Because Today,<br>IKAW NAMAN.</h2>
+    <p id="letterText">Sa bawat aral na itinuro, may pangarap na nabuo. Sa bawat salitang binitiwan, may pusong nabigyan ng pag-asa. Ngayong Araw ng mga Guro, hindi muna kami ang bida — dahil ngayon, <strong>IKAW NAMAN.</strong></p>
+    <button class="btn btn-primary" id="appreciatedButton">★ YOU ARE APPRECIATED</button>
+  </div>
+</section>
+
+<section class="section event-section" id="event">
+  <div class="event-layout">
+    <div class="panel">
+      <h2 class="section-title" style="font-size:30px">Event Information</h2>
+      <div class="event-grid">
+        <div>
+          <div class="event-item">📍 <strong>School Name</strong>Your School Name Here</div>
+          <div class="event-item">🕒 <strong>Date &amp; Time</strong>Enter event date and time</div>
+          <div class="event-item">📌 <strong>Venue</strong>School Gymnasium</div>
+        </div>
+
+        <div>
+          <div class="event-item"><strong>Celebration Activities</strong>Program, Tribute Video, Student Performances, Awarding of Teachers, Fellowship</div>
+          <div class="event-item"><strong>Organizing Committee</strong>Committee Members Here</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <h3>Countdown to the Celebration</h3>
+        <p style="font-size:13px;color:#62738a">Set your actual event date in the JavaScript below.</p>
+        <div class="countdown">
+          <div class="count-box"><strong id="days">--</strong>Days</div>
+          <div class="count-box"><strong id="hours">--</strong>Hours</div>
+          <div class="count-box"><strong id="minutes">--</strong>Minutes</div>
+          <div class="count-box"><strong id="seconds">--</strong>Seconds</div>
+        </div>
+      </div>
+
+      <div class="panel music-row">
+        <div>
+          <strong>♫ Background Music</strong>
+          <div style="font-size:12px;color:#62738a">Optional music file</div>
+        </div>
+        <button class="btn btn-outline" id="musicToggle">Music: Off</button>
+        <audio id="bgMusic" loop preload="none">
+          <source src="music.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <p class="spark">✧ ♡ ✧</p>
+  <p class="script">Made with love, gratitude, and appreciation for every teacher who makes a difference.</p>
+  <small>TEACHERS' DAY CELEBRATION | SCHOOL YEAR 2026–2027 | IKAW NAMAN</small>
+</footer>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const EVENT_DATE = "";
+const toast = document.getElementById("toast");
+let toastTimer;
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function() {
+    toast.classList.remove("show");
+  }, 3200);
+}
+
+document.querySelectorAll(".reveal").forEach(function(button) {
+  button.addEventListener("click", function() {
+    showToast(button.dataset.message);
+  });
+});
+
+document.getElementById("surpriseJump").addEventListener("click", function() {
+  document.getElementById("surprise").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("giftButton").addEventListener("click", function() {
+  showToast("You are valued, appreciated, and loved! Happy Teachers' Day! 💛");
+});
+
+document.getElementById("appreciatedButton").addEventListener("click", function() {
+  showToast("Maraming salamat po, teachers! This day is for you. 💛");
+});
+
+document.getElementById("messageForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const sender = document.getElementById("sender").value.trim();
+  const message = document.getElementById("message").value.trim();
+  if (!sender || !message) return;
+
+  const note = document.createElement("article");
+  note.className = "sticky-note";
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = message;
+
+  const author = document.createElement("small");
+  author.textContent = "— " + sender;
+
+  note.appendChild(paragraph);
+  note.appendChild(author);
+
+  document.getElementById("noteWall").prepend(note);
+  document.getElementById("messageForm").reset();
+  showToast("Your appreciation message has been added!");
+});
+
+function updateCountdown() {
+  const ids = ["days", "hours", "minutes", "seconds"];
+  if (!EVENT_DATE) {
+    ids.forEach(function(id) {
+      document.getElementById(id).textContent = "--";
+    });
+    return;
+  }
+
+  const target = new Date(EVENT_DATE).getTime();
+  const distance = target - Date.now();
+
+  if (Number.isNaN(target)) {
+    ids.forEach(function(id) {
+      document.getElementById(id).textContent = "--";
+    });
+    return;
+  }
+
+  if (distance <= 0) {
+    ids.forEach(function(id) {
+      document.getElementById(id).textContent = "0";
+    });
+    return;
+  }
+
+  document.getElementById("days").textContent = Math.floor(distance / 86400000);
+  document.getElementById("hours").textContent = Math.floor((distance % 86400000) / 3600000);
+  document.getElementById("minutes").textContent = Math.floor((distance % 3600000) / 60000);
+  document.getElementById("seconds").textContent = Math.floor((distance % 60000) / 1000);
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+const audio = document.getElementById("bgMusic");
+const musicButton = document.getElementById("musicToggle");
+let musicOn = false;
+
+musicButton.addEventListener("click", async function() {
+  if (!musicOn) {
+    try {
+      await audio.play();
+      musicOn = true;
+      musicButton.textContent = "Music: On";
+    } catch (error) {
+      showToast("Add a music.mp3 file beside index.html to enable music.");
+    }
+  } else {
+    audio.pause();
+    musicOn = false;
+    musicButton.textContent = "Music: Off";
+  }
+});
+</script>
+</body>
+</html>
